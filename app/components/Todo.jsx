@@ -1,7 +1,8 @@
 var React = require('react');
-var moment = require('moment');
 var {connect} = require('react-redux');
+var moment = require('moment');
 var actions = require('actions');
+
 export var Todo = React.createClass({
   render: function () {
     var {id, text, completed, createdAt, completedAt, dispatch} = this.props;
@@ -34,4 +35,4 @@ export var Todo = React.createClass({
   }
 });
 
-export default connect()(Todo)
+export default connect()(Todo);
